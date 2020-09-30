@@ -1,0 +1,97 @@
+.container {
+  max-width: 900px;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  background: #3f51b5;
+  color: #fff;
+  text-align: center;
+  margin-top: 3.6rem;
+  border-radius: 6px;
+  box-shadow: 0 20px 20px -6px rgba(0, 0, 0, 0.397);
+}
+.card_title {
+  font-size: 1.7rem;
+  padding: 0.7rem;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.card_list {
+  padding: 1rem 0 1rem 0;
+}
+.card_text {
+  text-align: left;
+  padding: 1rem;
+}
+.card_text:hover {
+  background: #5869ca;
+  cursor: pointer;
+}
+.countUp_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+.countUp_box h1 {
+  font-weight: 600;
+}
+.loading {
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.loading span:nth-child(2) {
+  animation: span1 1s 0.3s ease-in infinite;
+}
+.loading span:nth-child(3) {
+  animation: span2 1s 0.6s ease-in infinite;
+  /* opacity: 0; */
+}
+.loading span:nth-child(4) {
+  animation: span3 1s 0.9s ease-in infinite;
+  /* opacity: 0; */
+}
+@keyframes span1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes span2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes span3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 464px) {
+  .card_title {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+  .card_text {
+    font-size: 0.9rem;
+  }
+}

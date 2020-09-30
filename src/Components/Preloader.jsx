@@ -10,7 +10,14 @@ export default function Preloader() {
   }, []);
   return (
     <div className="countUp_box">
-      <h1>{value}</h1>
+      <div className="loading">
+        <span>Fetching Data</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </div>
+
+      <h1>{value}s</h1>
     </div>
   );
 }

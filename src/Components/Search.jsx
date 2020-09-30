@@ -101,8 +101,9 @@ export default function Search() {
           </div>
         </Toolbar>
       </AppBar>
-      {loading && <Preloader />}
-      <ResultCard data={data} />
+      {/* <Preloader /> */}
+      {!!loading && <Preloader />}
+      {!loading && <ResultCard data={data} />}
     </div>
   );
 }
