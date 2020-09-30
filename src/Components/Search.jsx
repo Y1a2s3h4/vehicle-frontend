@@ -73,7 +73,6 @@ export default function Search() {
     axios.get(`https://vehicle-details.herokuapp.com/${input}`).then((res) => {
       setData(res.data);
       setLoading(false);
-      console.log(data);
     });
   };
 
